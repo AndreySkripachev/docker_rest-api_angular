@@ -1,0 +1,12 @@
+# Node modules
+api/node_modules
+ui/node_modules
+
+# Builded Node JS application
+api/build
+
+# Angular cache
+ui/.angular
+
+# Builded Angular application
+ui/dist

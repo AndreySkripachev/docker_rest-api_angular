@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": "/",
+    "outDir": "build",
+    "noImplicitAny": true,
+    "target": "ES6",
+    "module": "Node16",
+    "typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./"
+  },
+  "include": [ "./*" ],
+  "exclude": [ "node_modules" ]
+}

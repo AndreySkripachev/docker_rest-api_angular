@@ -1,0 +1,31 @@
+{
+  "name": "docker-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api:start": "nodemon ./build/index",
+    "api:build-win": "(rd /s /q build || mkdir build) && npm run api:build",
+    "api:build": "npx tsc --build",
+    "start": "npm run api:build && docker compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreySkripachev/docker-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreySkripachev/docker-2/issues"
+  },
+  "homepage": "https://github.com/AndreySkripachev/docker-2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "@types/pg": "^8.6.6",
+    "pg": "^8.9.0",
+    "typescript": "^4.9.4"
+  }
+}

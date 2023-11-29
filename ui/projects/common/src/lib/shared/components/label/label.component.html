@@ -1,0 +1,12 @@
+<label class="label">
+	<span
+		*ngIf="labelText !== null"
+		class="label__content"
+		data-testid="label"
+	>
+		{{ labelText }}
+	</span>
+	<saanboc-form-error-wrapper>
+		<ng-content />
+	</saanboc-form-error-wrapper>
+</label>
